@@ -1,44 +1,6 @@
 /* 
-Offset the main content area to prevent overlap
-with header/footer.
-Color purely for development purposes
-*/
-.container-fluid {
-	margin: auto;
-	text-align: center;
-	overflow: scroll;
-	padding-left: 0;
-	padding-right: 0;
-}
-
-.content {
-	padding-top: 60px;
-	text-align: left;
-	margin-left: 5px;
-	margin-right: 5px;
-}
-
-.introduction {
-	background-color: #FFFFFF;
-}
-
-.people {
-	background-color: #FFFFFF;
-	padding-bottom: 60px;
-}
-
-.platform {
-	background-color: #F5F5F5;
-	padding-bottom: 60px;	
-}
-
-.background {
-	background-color: #F5F5F5;
-	padding-bottom: 60px;	
-}
-/* 
-Height of navbar is 60px
-Color purely for development purposes
+Height of navbar is 60px, background
+color is dark blue
 */
 .navbar-fixed-top {
 	background-color: #283250;
@@ -46,8 +8,8 @@ Color purely for development purposes
 }
 
 /*
-Height of footer is 272 px
-Color purely for development purposes
+Background color of footer is dark blue, text color is white.
+Add 60px at the top, 84px at the bottom
 */
 .navbar-bottom {
 	background-color: #283250;
@@ -56,73 +18,142 @@ Color purely for development purposes
 	padding-bottom: 84px;
 }
 
-body {
-	font-size: 16px;
-	overflow: none;
+/*
+Container for content:
+Center content blocks, no padding so
+background color of content blocks
+runs until margin
+*/
+.container-fluid {
+	text-align: center;
+	padding-left: 0;
+	padding-right: 0;
 }
 
+/* 
+Offset the main content area to prevent overlap
+with header, add 60px between each row
+*/
+.content {
+	padding-top: 60px;
+	text-align: left;
+}
+
+/*
+Background color of first block is white
+*/
+.introduction {
+	background-color: #FFFFFF;
+}
+
+/*
+Background color of second block is grey,
+add 60px at the bottom
+*/
+.background {
+	background-color: #F5F5F5;
+	padding-bottom: 60px;	
+}
+
+/*
+Background color of third block is white,
+add 60px at the bottom
+*/
+.people {
+	background-color: #FFFFFF;
+	padding-bottom: 60px;
+}
+
+/*
+Background color of fourth block is grey,
+add 60px at the bottom
+*/
+.platform {
+	background-color: #F5F5F5;
+	padding-bottom: 60px;	
+}
+
+/*
+Typography: set 1em to 16px;
+*/
+
+body {
+	font-size: 16px;
+}
+
+/*
+Font for h1 is dark blue Rosario
+Regular h1 has size 36px, padding at bottom 36px
+*/
 h1 {
 	color: #2b3250;
 	font-family: 'Rosario', sans-serif;
-}
-
-h1 {
 	font-size: 2.25em;
 	padding-bottom: 36px;
-	margin-left: 5px;
-	margin-right: 5px;	
 }
 
+/*
+Non-leading h1 has size 28px and color white,
+top margin is -10px for alignment with t2
+*/
 h1.smaller {
-	font-size: 1.5em;
-	padding-top: 0;
-	margin-top: 0;
-	margin-left: 5px;
-	margin-right: 5px;	
+	font-size: 1.75em;
+	color: #FFFFFF;
+	margin-top:-10px;
 }
 
+/*
+Font for h2 is dark blue Rosario, size 24px
+Padding at bottom 20px
+*/
 h2 {
 	color: #2b3250;
 	font-family: 'Rosario', sans-serif;
 	font-size: 1.5em;
 	padding-bottom: 20px;
-	margin-left: 5px;
-	margin-right: 5px;
 }
 
+/*
+Font for h3 is is bright blue Roboto, size 16px
+Padding at bottom 20px
+*/
 h3 {
 	color: #00afdf;
 	font-family: 'Roboto', sans-serif;
 	font-size: 1em;
 	padding-bottom: 20px;
-	margin-left: 5px;
-	margin-right: 5px;	
 }
 
+/*
+Text area 1 has font darker blue Georgia, size 18px
+*/
 .t1 {
 	font-family: 'Georgia', sans-serif;
+	font-size: 1.125em;
 	color: #282d40;
-	margin-left: 5px;
-	margin-right: 5px;
 }
 
+/*
+Text area 2 has font white Roboto, size 16px
+*/
 .t2 {
 	font-family: 'Roboto', sans-serif;
 	color: #FFFFFF;
-	margin-left: 5px;
-	margin-right: 5px;
 }
 
-.white {
+/*
+Mailto in footer should be white underlined
+*/
+.mail, .mail:hover {
 	color: #FFFFFF;
-	margin-top: 0;
+	text-decoration: underline;
 }
 
-.face {
+/*
+Faces in people block should be centered
+and have bottom padding of 40px
+*/
+.cent {
+	text-align: center;
 	margin-bottom: 40px;
-}
-
-.nav > li > a:hover {
-	background-color: #283250;
-	height: 60px;
 }

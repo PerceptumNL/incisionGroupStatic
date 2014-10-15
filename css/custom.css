@@ -40,6 +40,14 @@ with header, add 60px between each row
 }
 
 /*
+Set margins to 0 to prevent side-scroll
+*/
+.row {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+/*
 Background color of first block is white
 */
 .introduction {
